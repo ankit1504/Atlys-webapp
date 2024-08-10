@@ -1,0 +1,33 @@
+.feed-page {
+    background-color: #131319;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-title {
+    font-weight: 500;
+    font-size: 28px;
+    height: 34px;
+    color: #C5C7CA;
+    margin-bottom: 0px;
+}
+
+.header-subtitle {
+    width: 580px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7F8084;
+}

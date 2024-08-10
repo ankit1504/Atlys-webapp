@@ -1,0 +1,57 @@
+.create-post-container {
+    height: 223px;
+    width: 700px;
+    background-color: #27292D;
+    border: 2px solid #35373B;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.create-post-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #C5C7CA;
+}
+
+.create-input-container {
+    height: 78px;
+    border-radius: 8px;
+    background-color: #191920;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #27292D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 16px;
+}
+
+.input-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7F8084;
+}
+
+.post-button {
+    height: 43px;
+    width: 111px;
+    background-color: #4A96FF;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+    position: absolute;
+    right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}

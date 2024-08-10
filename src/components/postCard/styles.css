@@ -1,0 +1,89 @@
+.post-card-container {
+    width: 700px;
+    background-color: #27292D;
+    border: 2px solid #35373B;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+.post-card-header {
+    display: flex;
+    align-items: center;
+}
+
+.username-text {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #C5C7CA;
+}
+
+.active-min-text {
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7F8084;
+}
+
+.post-card-button {
+    background-color: #27292D;
+    border: 0px;
+    color: #C5C7CA;
+    cursor: pointer;
+}
+
+.post-card-header-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.post-card-image {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 16px;
+}
+
+.post-data-container {
+    margin-top: 20px;
+    height: 78px;
+    border-radius: 8px;
+    background-color: #191920;
+    display: flex;
+    align-items: center;
+}
+
+.data-icon {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #27292D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 16px;
+}
+
+.data-text {
+    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7F8084;
+}
+
+.post-comment-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-count-text {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #7F8084;
+}
