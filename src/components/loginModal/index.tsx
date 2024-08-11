@@ -9,15 +9,19 @@ interface ILoginModal {
 
 const LoginModal: React.FunctionComponent<ILoginModal> = (props: ILoginModal) => {
 
-    const handleBackdropClick = (e: { target: any; currentTarget: any; }) => {
-      if (e.target === e.currentTarget) {
-        props.setShowLoginForm(false);
-      }
-    };
+  const handleBackdropClick = (e: { target: any; currentTarget: any; }) => {
+    if (e.target === e.currentTarget) {
+      props.setShowLoginForm(false);
+    }
+  };
+  
+  const onClose = () => {
+    props.setShowLoginForm(false);
+  }
     
   return (
     <div className="modal-backdrop" onClick={handleBackdropClick}>
-        <LoginForm authType={props.authType} onSubmit={props.setShowLoginForm}/>
+        <LoginForm authType={props.authType} onSubmit={props.setShowLoginForm} onClose={onClose}/>
     </div>
   );
 }

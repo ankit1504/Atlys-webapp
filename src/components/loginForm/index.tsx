@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import styles from './loginForm.module.css';
+import CIcon from '@coreui/icons-react';
+import { cilX } from '@coreui/icons';
 
 export enum AuthType {
   Login = 'LOGIN',
@@ -9,6 +11,7 @@ export enum AuthType {
 interface ILoginForm {
   authType: AuthType;
   onSubmit: (value?: any) => void;
+  onClose?: () => void;
 }
 
 const LoginForm: React.FunctionComponent<ILoginForm> = (props: ILoginForm) => {
@@ -33,6 +36,7 @@ const LoginForm: React.FunctionComponent<ILoginForm> = (props: ILoginForm) => {
 
   return (
     <div className={styles.loginForm}>
+      {props.onClose && <div className={styles.closeButton} onClick={props.onClose}><CIcon icon={cilX} height={12} width={12} color='#FFFFFF'/></div>}
       <div className={styles.headerContainer}>
         <p className={styles.headerTitle}>{currentAuthType === AuthType.Login ? 'WELCOME BACK' : 'SIGN UP'}</p>
         <p className={styles.headerSubtitle}>{currentAuthType === AuthType.Login ?'Log into your account' : 'Create an account to continue'}</p>
